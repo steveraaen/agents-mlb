@@ -7,10 +7,10 @@ export default function BChart(props) {
 
   if(props.data){
     return (   
-      <ResponsiveContainer width={'90%'} height={'20%'}>
+
         <BarChart
         barCategoryGap = '5%'
-          width={1000}
+          width={900}
           height={200}
           data={props.data.graphAll}
           margin={{ top: 10, right: 20, left: 40, bottom: 0 }}
@@ -97,7 +97,7 @@ export default function BChart(props) {
 
           />
         </BarChart>
-      </ResponsiveContainer>
+
   
     );
   }
