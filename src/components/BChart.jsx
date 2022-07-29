@@ -18,7 +18,7 @@ export default function BChart(props) {
           <XAxis dataKey = 'agent'/>
           <Tooltip 
           content={<CustTip />} 
-          position={{ x: 800, y: -100 }}/> 
+         /> 
 
           <Bar
           onClick = {function (ev) {
