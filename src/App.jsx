@@ -105,11 +105,11 @@ async function getPitchDetail(agent) {
 <Box  sx = {{position: 'bottom', width: '20%'}} component="img"  src = {custlogotxt} />
     </Box>
     <BasicModal />
-    <Box sx = {{flexDirection: 'column', marginLeft: '5%', marginRight: '5%', marginTop: '2%', flexWrap: 'wrap'}}>
+    <Box sx = {{flexDirection: 'column', marginLeft: '10%', marginRight: '10%', marginTop: '2%', flexWrap: 'wrap'}}>
         <InputLabel sx = {{ display: 'flex', justifyContent: 'center', fontWeight: 'bold'}}>Players per Agent</InputLabel>
         <MinPlayerSlider handleSlideChange = {handleSlideChange} value={sliderVal} />
         </Box>
-    <Box sx = {{ marginLeft: '5%', marginRight: '5%', width: '100%', height:'20%' }} >
+    <Box sx = {{ marginLeft: '5%', marginRight: '5%'}} >
     <BChart  data = {graph.graph}  
               getBatDetail = {getBatDetail} 
               getPitchDetail = {getPitchDetail} 
