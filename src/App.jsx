@@ -101,10 +101,15 @@ async function getPitchDetail(agent) {
   return (
     <>
 
-    <Box  sx = {{  display: 'flex', justifyContent: 'center', marginBottom: '2%'}} >
-<Box  sx = {{position: 'bottom', width: '20%'}} component="img"  src = {custlogotxt} />
+    <Box  sx = {{  display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginBottom: '2%'}} >
+      <BasicModal />
+      <Box  sx = {{position: 'bottom', width: '20%', marginLeft: '17%'}} component="img"  src = {custlogotxt} />
+        <Box sx = {{  display: 'flex', flexDirection: 'column'}} >    
+        <Typography  variant = "overline" > Hover over bars for agent info.</Typography>
+        <Typography  variant = "overline" > Click bar to view players.</Typography>
     </Box>
-    <BasicModal />
+    </Box>
+    
     <Box sx = {{flexDirection: 'column', marginLeft: '10%', marginRight: '10%', marginTop: '2%', flexWrap: 'wrap'}}>
         <InputLabel sx = {{ display: 'flex', justifyContent: 'center', fontWeight: 'bold'}}>Players per Agent</InputLabel>
         <MinPlayerSlider handleSlideChange = {handleSlideChange} value={sliderVal} />

@@ -4,7 +4,7 @@ import CustTip from './CustTip'
 // const CustTip = lazy(() => import('./CustTip'));
 
 export default function BChart(props) {
-
+  
   if(props.data){
     return (   
       <ResponsiveContainer height = {200} width = "100%">
@@ -22,11 +22,10 @@ export default function BChart(props) {
 
           <Bar
           onClick = {function (ev) {
-            {/*console.log(ev)*/}
             props.getBatDetail(ev)
             props.getPitchDetail(ev)
             props.setAgent(ev.agent)}}
-
+            onMouseEnter = {((ev) => console.log(ev))}
            dataKey="bplayers.val"
             stackId="1"
             stroke="#003f5c"

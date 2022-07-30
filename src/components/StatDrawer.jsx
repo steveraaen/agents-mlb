@@ -36,7 +36,7 @@ export default function BasicModal() {
     <Box sx = {{width: '.2vw'}}>
       <Button onClick={handleOpen}>About</Button>
     </Box>
-    <Typography  variant = "overline" > Hover over bars for agent info - Click bar to view players.</Typography>
+
     </Box>
 
       <Modal
